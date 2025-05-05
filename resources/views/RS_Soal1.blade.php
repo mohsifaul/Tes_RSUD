@@ -17,7 +17,6 @@
 <body>
     <div class="container mt-5 mb-5">
         <h1>Laporan Morbiditas Rawat Inap</h1>
-        <a href="/Soal-2" class='btn btn-primary'>Soal 2</a>
         <button onclick="exportToExcel('tableekspor')" class="btn btn-success">Export Data</button>
         <div class="mt-3">
             <table border="1" class="text-center table-bordered" id="tableekspor">
@@ -80,9 +79,23 @@
             downloadurl = document.createElement("a");
 
             document.body.appendChild(downloadurl);
-            downloadurl.href = 'data:' + dataFileType + ', ' + tableHTMLData;
-            downloadurl.download = filename;
-            downloadurl.click();
+
+            if (navigator.msSaveOrOpenBlob) {
+                var blob = new Blob(['\ufeff', tableHTMLData], {
+                    type: dataFileType
+                });
+                navigator.msSaveOrOpenBlob(blob, filename);
+            } else {
+                // Create a link to the file
+                downloadurl.href = 'data:' + dataFileType + ', ' + tableHTMLData;
+
+                // Setting the file name
+                downloadurl.download = filename;
+
+                //triggering the function
+                downloadurl.click();
+            }
+        }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">

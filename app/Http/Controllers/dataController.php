@@ -27,6 +27,7 @@ class dataController extends Controller
                 'pasien.date_of_birth',
                 'kasus.krs_alasan',
             )
+            ->whereMonth('kasus.krs_at', 3 )
             // ->limit(100)
             ->get();
 
@@ -79,6 +80,7 @@ class dataController extends Controller
             }
         }
 
+        // dd($result);
         return view('RS_Soal1', [
             'data' => $result,
             'ageGroups' => array_keys($ageGroups)
