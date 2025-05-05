@@ -21,6 +21,6 @@ Route::get('/Soal-2', function () {
     return view('RS_Soal2');
 });
 
-Route::get('/', [dataController::class, 'index']);
+Route::get('/', [dataController::class, 'index'])->name('Soal-1');
 // Route::get('/Soal-2', [dataController::class, 'index']);
 

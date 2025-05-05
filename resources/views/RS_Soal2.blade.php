@@ -17,54 +17,14 @@
 <body>
     <div class="container mt-5 mb-5">
         <h1>Formulir Tindakan Rehab Medik</h1>
-        <button onclick="" class="btn btn-success">Export PDF</button>
+        <button class="btn btn-success">Tambah Data</button>
+        <button onclick="" class="btn btn-danger">Export PDF</button>
+         <a href="{{route('Soal-1')}}" class='btn btn-primary'>Soal 1</a>
         <div class="mt-3">
-            {{-- <table border="1" class="text-center table-bordered" id="tableekspor">
-                <thead>
-                    <tr>
-                        <th rowspan="2">Kode ICD</th>
-                        <th rowspan="2">Diagnosa Penyakit</th>
-                        @foreach ($ageGroups as $group)
-                            <th colspan="2">{{ $group }} Tahun</th>
-                        @endforeach
-                        <th colspan="3">Jumlah Pasien Keluar Hidup dan Mati Menurut Jenis Kelamin</th>
-                        <th colspan="3">Jumlah Pasien Keluar Mati</th>
-                    </tr>
-                    <tr>
-                        @foreach ($ageGroups as $group)
-                            <th>L</th>
-                            <th>P</th>
-                        @endforeach
-                        <th>L</th>
-                        <th>P</th>
-                        <th>Total</th>
-                        <th>L</th>
-                        <th>P</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($data as $item)
-                        <tr>
-                            <td>{{ $item['code_icd'] }}</td>
-                            <td>{{ $item['long_desc'] }}</td>
-                            @foreach ($ageGroups as $group)
-                                <td>{{ $item['groups'][$group]['L'] ?? 0 }}</td>
-                                <td>{{ $item['groups'][$group]['P'] ?? 0 }}</td>
-                            @endforeach
-                            {{-- Jumlah Pasien Keluar Hidup dan Mati Menurut Jenis Kelamin --}}
-                            <td>{{ $item['total']['L'] }}</td>
-                            <td>{{ $item['total']['P'] }}</td>
-                            <td>{{ $item['total']['L'] + $item['total']['P'] }}</td>
-                            {{-- Jumlah Pasien Keluar Mati --}}
-                            <td>{{ $item['krs_meninggal']['L'] }}</td>
-                            <td>{{ $item['krs_meninggal']['P'] }}</td>
-                            <td>{{ $item['krs_meninggal']['L'] + $item['krs_meninggal']['P'] }}</td>
-                        </tr>
-                    @endforeach
-                </tbody>
-            </table> --}}
-
+            <table>
+                <thead></thead>
+                <tbody></tbody>
+            </table>
         </div>
 
     </div>

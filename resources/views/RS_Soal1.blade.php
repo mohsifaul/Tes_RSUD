@@ -17,6 +17,7 @@
 <body>
     <div class="container mt-5 mb-5">
         <h1>Laporan Morbiditas Rawat Inap</h1>
+        <a href="/Soal-2" class='btn btn-primary'>Soal 2</a>
         <button onclick="exportToExcel('tableekspor')" class="btn btn-success">Export Data</button>
         <div class="mt-3">
             <table border="1" class="text-center table-bordered" id="tableekspor">
