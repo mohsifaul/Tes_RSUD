@@ -21,9 +21,25 @@
         <button onclick="" class="btn btn-danger">Export PDF</button>
          <a href="{{route('Soal-1')}}" class='btn btn-primary'>Soal 1</a>
         <div class="mt-3">
-            <table>
-                <thead></thead>
-                <tbody></tbody>
+            <table class="table table-bordered">
+                <thead>
+                    <th>Halo</th>
+                    <th>Halo</th>
+                    <th>Halo</th>
+                    <th>Halo</th>
+                    <th>Halo</th>
+                    <th>Halo</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>jnasaskas</td>
+                        <td>jnasaskas</td>
+                        <td>jnasaskas</td>
+                        <td>jnasaskas</td>
+                        <td>jnasaskas</td>
+                        <td>jnasaskas</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
 
