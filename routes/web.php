@@ -17,9 +17,10 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-// Route::get('/', function () {
-//     return view('RS_Soal1');
-// });
+Route::get('/Soal-2', function () {
+    return view('RS_Soal2');
+});
 
 Route::get('/', [dataController::class, 'index']);
+// Route::get('/Soal-2', [dataController::class, 'index']);
 
