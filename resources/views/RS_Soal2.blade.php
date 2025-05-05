@@ -19,7 +19,7 @@
         <h1>Formulir Tindakan Rehab Medik</h1>
         <button class="btn btn-success">Tambah Data</button>
         <button onclick="" class="btn btn-danger">Export PDF</button>
-         <a href="{{route('Soal-1')}}" class='btn btn-primary'>Soal 1</a>
+        <a href="{{route('Soal-1')}}" class='btn btn-primary'>Soal 1</a>
         <div class="mt-3">
             <table class="table table-bordered">
                 <thead>
